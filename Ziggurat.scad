@@ -1,5 +1,6 @@
-$fn = 100;		// Set rendering quality.
-scale(v=25.4){	// scale from mm to inches.
+$fn = 100;		 // Set rendering quality.
+module ziggurat() {
+scale(v=25.4){ 	// scale from mm to inches.
 
 cylinder(h=1.100, r=.5);
 translate([0,0,1.1])		{
@@ -12,3 +13,6 @@ translate([0,0,1.1])		{
 	}
 }
 }	// end scale
+}
+
+ziggurat();
